@@ -1,6 +1,4 @@
-Perfekt! Här är en färdig **Markdown-fil på engelska** med tydliga och pedagogiska instruktioner, inklusive mappstruktur, steg-för-steg flöde och hur teamet installerar hooks i sina egna utvecklingsrepo. Den kan sparas som `HOOKS_SETUP.md` i planning-repo.
 
-```markdown
 # Git Hooks Installation Guide
 
 This guide explains how to install and use the shared Git hooks from the `planning` repository in your own project repository (backend, frontend, or embedded).
@@ -25,7 +23,7 @@ Your planning repository should look like this:
 
 ```
 
-ChasAdvancePlanning/
+ChasAdvancePlanning/planning
 ├── .githooks/
 │   ├── pre-commit
 │   └── commit-msg
@@ -64,7 +62,7 @@ cd /path/to/your/project
 2. **Run the install script from the planning repository**:
 
 ```bash
-/path/to/planningRepository/install-hooks.sh
+/path/to/planningRepository/planning/install-hooks.sh
 ```
 
 * This installs the hooks into your project automatically.
@@ -72,7 +70,7 @@ cd /path/to/your/project
 > Alternatively, you can specify your project explicitly and run it from anywhere:
 
 ```bash
-/path/to/ChasAdvancePlanning/install-hooks.sh /path/to/your/project
+/path/to/ChasAdvancePlanning/planning/install-hooks.sh /path/to/your/project
 ```
 
 ---
