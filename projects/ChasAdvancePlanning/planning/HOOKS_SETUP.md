@@ -36,14 +36,15 @@ ChasAdvancePlanning/planning
 - `install-hooks.sh` is the installer script.  
 - `HOOKS_SETUP.md` is this documentation.  
 
-> Note: No changes or `chmod` are needed in the planning repository itself.
+> Note: If you get a similair "zsh: permission denied: /path/to/file/install-hooks.sh error". Please run "chmod +x /path/to/file/install-hooks.sh"
 
 ---
 
 ## 3. Installing Hooks in Your Project Repository
 
-**Before running the hooks, you need to install them in your project repo.** The installation will:
+**Before running the hooks, you need to install them in your project repo.** 
 
+The installation will:
 - Create a `.githooks/` folder in your project if it doesn't exist.
 - Copy hook files from the planning repository.
 - Make the hooks executable.
