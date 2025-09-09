@@ -28,11 +28,11 @@ fi
 
 echo "Installing hooks into $TARGET_REPO ..."
 
-# Create .githooks in target repo
-mkdir -p "$TARGET_REPO/.githooks"
+# Create .githooks in target repo - This is commented out to avoid overwriting existing hooks
+# mkdir -p "$TARGET_REPO/.githooks"
 
-# Copy hooks
-cp -r "$PLANNING_HOOKS/"* "$TARGET_REPO/.githooks/"
+# Copy hooks - This is commented out to avoid overwriting existing hooks
+# cp -r "$PLANNING_HOOKS/"* "$TARGET_REPO/.githooks/"
 
 # Make hooks executable
 chmod +x "$TARGET_REPO/.githooks/*"
